@@ -85,7 +85,7 @@ This project utilizes:
 
 ---
 
-## 🔮 Future Scope
+## Future Scope
 
 - Integrate IoT sensors
 - Improve model accuracy using larger datasets
@@ -101,6 +101,6 @@ This project utilizes:
 
 ---
 
-## 🙏 Acknowledgement
+## Acknowledgement
 
 This project was developed as part of the IBM SkillsBuild University Engagement Program.
