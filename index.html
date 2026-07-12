@@ -1,0 +1,19 @@
+
+<!doctype html><html><head><title>PowerGuard AI</title>
+<link rel="stylesheet" href="/static/css/style.css"></head><body>
+<h1>PowerGuard AI</h1>
+<form action="/predict" method="post">
+<input name="Voltage (V)" placeholder="Voltage"><br>
+<input name="Current (A)" placeholder="Current"><br>
+<input name="Power Load (MW)" placeholder="Power Load"><br>
+<input name="Temperature (°C)" placeholder="Temperature"><br>
+<input name="Wind Speed (km/h)" placeholder="Wind Speed"><br>
+<select name="Weather Condition"><option>Sunny</option><option>Rainy</option><option>Cloudy</option><option>Windy</option></select><br>
+<select name="Maintenance Status"><option>Completed</option><option>Pending</option><option>Overdue</option></select><br>
+<select name="Component Health"><option>Good</option><option>Moderate</option><option>Poor</option></select><br>
+<input name="Duration of Fault (hrs)" placeholder="Duration"><br>
+<input name="Down time (hrs)" placeholder="Downtime"><br>
+<button>Predict</button>
+</form>
+{% if prediction %}<h2>Prediction: {{prediction}}</h2>{% endif %}
+</body></html>
